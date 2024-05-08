@@ -1,3 +1,6 @@
+#import "src/mantys.typ": *
+#import "@preview/showybox:2.0.1": showybox
+
 #set text(font: "Hiragino Kaku Gothic Pro", size:10pt)
 #set heading(numbering: "1.")
 #set par(
@@ -16,16 +19,21 @@
   #smallcaps(it)
 ]
 
-#align(center, text(17pt)[
-  *Deep Learning for ENGINEER*
-])
+#set outline(
+)
 
-JDLAが主催するE資格の勉強用ノート。オプションについても学習するが優先度はやや低め。
-
-#outline(
-  indent: auto,
-  title: [目次])
-#pagebreak()
+#show: mantys.with(
+	name:		"your-package-name",
+	title: 		[Deep Learning for ENGINEER],
+	subtitle: 	[E資格の勉強用ノート],
+	authors:	"Hayato Tsumura",
+	url:		"https://github.com/Tsuuuuuuun/e-sikaku",
+	version:	"0.0.1",
+	date:		datetime.today(),
+	abstract: 	[
+		E資格とは、ディープラーニングの理論を理解し、適切な手法を選択して実装する能力や知識を有しているかを認定する試験である。https://www.jdla.org/certificate/engineer/ に掲載されているシラバスをもとに、深層学習の実装に関する知識を身につけることを目的として、本ノートを進めていこうと思う。
+	],
+)
 
 = 数学的基礎
 == 線形代数 (option)
